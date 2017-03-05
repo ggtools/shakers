@@ -1,6 +1,6 @@
 .PHONY: all
 
-SHAKERS_MOUNT := $(if $(BIND_DIR),-v "$(CURDIR)/$(BIND_DIR):/go/src/github.com/vdemeester/shakers/$(BIND_DIR)")
+SHAKERS_MOUNT := $(if $(BIND_DIR),-v "$(CURDIR)/$(BIND_DIR):/go/src/github.com/ggtools/shakers/$(BIND_DIR)")
 
 GIT_BRANCH := $(shell git rev-parse --abbrev-ref HEAD 2>/dev/null)
 SHAKERS_DEV_IMAGE := shakers-dev$(if $(GIT_BRANCH),:$(GIT_BRANCH))

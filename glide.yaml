@@ -1,3 +1,3 @@
-package: github.com/vdemeester/shakers
+package: github.com/ggtools/shakers
 import:
   - package: gopkg.in/check.v1
